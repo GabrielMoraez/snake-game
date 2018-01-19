@@ -1,27 +1,22 @@
 var drawModule = (function() {
 	var bodySnake = function (x, y) {
 		// This is the single square
-		ctx.fillStyle = 'green';
+		ctx.fillStyle = '#2ecc71';
 		ctx.fillRect(x*snakeSize, y*snakeSize, snakeSize, snakeSize);
-		//This is the border of the square
-		ctx.strokeStyle = 'darkgreen';
-		ctx.strokeRect(x*snakeSize, y*snakeSize, snakeSize, snakeSize);
+
 	}
 
 	var pizza = function(x, y) {
 		//This is the border of the pizza
-		ctx.fillStyle = 'yellow';
+		ctx.fillStyle = '#e74c3c';
 		ctx.fillRect(x*snakeSize, y*snakeSize, snakeSize, snakeSize);
-		//This is the single square
-		ctz.fillStyle = 'red';
-		ctx.fillRect(x*snakeSize+1, y*snakeSize+1, snakeSize-2, snakeSize-2);
 	}
 
 	var scoreText = function() {
 		//How many pizzas did the snake ate
 		var score_text = "Score: " + score;
-		ctx.fillStyle = 'blue';
-		ctx.fllText(score_text, 145, h-5);
+		ctx.fillStyle = '#2980b9';
+		ctx.fillText(score_text, 145, h-5);
 	}
 
 	var drawSnake = function() {
@@ -68,11 +63,11 @@ var drawModule = (function() {
 
 	var paint = function() {
 		//Let's draw the space in wich the snake will move
-		ctx.fillStyle = 'lightGray';
+		ctx.fillStyle = '#C9E8E8';
 		ctx.fillRect(0, 0, w, h);
 
 		//Give it a border 
-		ctx.strokeStyle = 'black';
+		ctx.strokeStyle = '#ecf0f1';
 		ctx.strokeRect(0, 0, w, h);
 
 		// Disable start button while you're playing
