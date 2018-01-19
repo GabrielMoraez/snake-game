@@ -27,7 +27,7 @@
 				if (direction != 'left'){
 					direction = 'right';
 				}
-				console.log('left');
+				console.log('right');
 			break;
 
 
